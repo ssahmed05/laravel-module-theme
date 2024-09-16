@@ -13,17 +13,18 @@
     <meta name="keywords" content="{{ $keywords ?? '' }}">
     <meta name="author" content="{{ $author ?? '' }}">
 
+    @vite(\Nwidart\Modules\Module::getAssets())
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     {{-- Vite CSS --}}
-    {{-- {{ module_vite('build-dashboard', 'resources/assets/sass/app.scss') }} --}}
+    {{ module_vite('build-dashboard', 'resources/assets/sass/app.scss') }}
 </head>
 
 <body>
     @yield('content')
 
     {{-- Vite JS --}}
-    {{-- {{ module_vite('build-dashboard', 'resources/assets/js/app.js') }} --}}
+    {{ module_vite('build-dashboard', 'resources/assets/js/app.js') }}
 </body>
