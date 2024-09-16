@@ -1,3 +1,5 @@
 {
-    "Dashboard": true
+    "Dashboard": true,
+    "Integrations": true,
+    "Affiliate": true
 }
